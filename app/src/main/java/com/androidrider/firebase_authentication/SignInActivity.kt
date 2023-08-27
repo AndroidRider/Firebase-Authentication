@@ -41,6 +41,10 @@ class SignInActivity : AppCompatActivity() {
             startActivity(Intent(this, ResetPasswordActivity::class.java))
             finish()
         }
+        binding.tvPhoneAuthentication.setOnClickListener {
+            startActivity(Intent(this, PhoneActivity::class.java))
+            finish()
+        }
         binding.btnSignIn.setOnClickListener {
 
             val email = binding.edtEmail.text.toString()
